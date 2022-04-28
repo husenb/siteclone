@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
+
 import homeStyles from '../styles/Home.module.css'
-import Link from 'next/link'
+
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <body>
+      <div>
         <div className={homeStyles.hero}>
         <div className={homeStyles.herocontent}>
         <h1>
@@ -43,7 +43,7 @@ export default function Home() {
 
 
         </div>
-      </body>
+      </div>
 
       <footer>
       </footer>

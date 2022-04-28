@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
  import navStyles from '../styles/Nav.module.css'
- import image from 'next/image'
+
 
 const nav = () => {
   return (
