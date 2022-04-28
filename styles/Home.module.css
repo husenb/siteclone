@@ -13,9 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
-  
-  
+  padding-top: 100px;
 }
 .herocontent h1{
   color: white;
@@ -26,16 +24,14 @@
 .herocontent span{
   text-decoration: underline;
   color: #2ecc71;
-
-  
 }
 .herocontent p{
   color: white;
   font-size: 20px;
   font-weight: bold;
-  max-width:70% ;
+  max-width:70%;
+ 
 }
-
 .getstartedbtn button{
 text-transform: uppercase;
 background:#2ecc71;
@@ -46,11 +42,38 @@ border-radius:20px;
 font-size: 12px;
 margin-right:30px;
 }
-.getstartedbtn button span{
+.getstartedbtn  span{
     margin:0 10px;
     padding-left: 10px;
 }
 .herodowncontent
 {
   display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+}
+.learnmoresection
+{
+  margin: 0 20px;
+}
+.learnmoresection button{
+  background: transparent;
+  color: #2ecc71;
+}
+.learnmoresection p{
+  color: white;
+
+}
+.learnmoresection span
+{
+  color: #2ecc71;
+  cursor: pointer;
+  line-height: 2;
+  font-weight: 300;
+}
+.ceosection
+{
+  width: 100%;
+  height: 90vh;
 }

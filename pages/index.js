@@ -27,9 +27,21 @@ export default function Home() {
         <section className={homeStyles.getstartedbtn}>
         <button> Get Started <span>A</span> </button>
         </section>
-        <p>Want to know how we stand out</p>
-        <button><Link href='/whatwedo'>Learn More</Link></button>
+        <section className={homeStyles.learnmoresection}>
+        <p>Want to know how we stand out <br/>
+        <span> Learn More</span>
+        </p>
+        </section>
         </div>
+        </div>
+        <div className={homeStyles.ceosection}>
+          <p>
+          “It would have taken months to build the product team that we inherited overnight with Leapfrog. They're built for startup speed, and they have consistently delivered a well-engineered product for us. Laudio is my second partnership with Leapfrog, and they have earned my trust.”
+          </p>
+          <img src='https://www.lftechnology.com/wp-content/themes/Froggy/dist/images/testimonial_person.png' height={60} width={60}/>
+          
+
+
         </div>
       </body>
 
