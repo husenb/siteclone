@@ -1,12 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
  import navStyles from '../styles/Nav.module.css'
+ import image from 'next/image'
 
 const nav = () => {
   return (
     <nav className={navStyles.nav}>
     <div className={navStyles.logo} > 
-     <h1><Link href='/'> Leapfrog</Link></h1> 
+    <img src='https://www.lftechnology.com/wp-content/themes/Froggy/img/logo_leapfrog.svg' height={50} width={300}/> 
      </div>
 
    <div className={navStyles.navlist} >

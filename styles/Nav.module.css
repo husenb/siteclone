@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 80px;
+    height: 100px;
     line-height: 80px;
     background: white;
     color: rgb(56, 55, 53);
@@ -13,19 +13,16 @@
 .logo
 {
     flex-basis: 20%;
+    padding-left: 10px;
+    margin-left: 10px;
+    line-height: 40px;
+    flex-shrink: 1;
 }
+
 .navlist{
     flex-basis: 80%;
 
 }
-.logo h1{
-    
-    color:#343a40;
-    font-family: 'Marko One', serif;
-    text-align: center;
-   
-}
-
 .navlist ul{
     list-style: none;
     display: flex;
@@ -41,12 +38,11 @@
 .navlist button
 {
 background:#102b7b ;
- color: white;
+color: white;
 padding:8px 12px;
 border: 0;
 border-radius:20px;
 font-size: 11px;
-
 text-transform: uppercase;
 margin-right:30px;
 }
