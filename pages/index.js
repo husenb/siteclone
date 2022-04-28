@@ -13,14 +13,17 @@ export default function Home() {
 
       <body>
         <div className={homeStyles.hero}>
+          <div className={homeStyles.herocontent}>
         <h1>
-          Innovate Better,
-        <span>Faster</span>
+          Innovate Better, <br/>
+        <span>faster.</span>
         </h1>
         <p>
         We help businesses imagine and create the digital experiences of tomorrow. We succeed together by blending the best of entrepreneurship, startup thinking, and world-class engineering.
         </p>
-        <button>Get Started <span>A</span> </button>
+        
+        </div>
+        <button> Get Started <span>A</span> </button>
 
         </div>
       </body>
