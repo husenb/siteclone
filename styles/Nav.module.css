@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Marko+One&display=swap');
+.nav
+{
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    background: white;
+    color: rgb(56, 55, 53);
+    line-height: 50px;
+    
+}
+.logo
+{
+    flex-basis: 20%;
+}
+.logo h1{
+    
+    color:#343a40;
+    font-family: 'Marko One', serif;
+  
+    text-align: center;
+   
+}
+
+.navlist{
+    flex-basis: 80%;
+
+}
+.navlist ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+     
+}
+.navlist ul li{
+    font-family: 'Marko One', serif;
+    font-size: 16px;
+    color:#343a40;
+}
+
+
+/* .navcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+} */
+
+.navlist button
+{
+background:#102b7b ;
+ color: white;
+padding:8px 12px;
+border: 0;
+border-radius:20px;
+font-size: 12px;
+text-transform: uppercase;
+margin-right:30px;
+}
+.navlist button span{
+    margin:0 5px;
+    padding-left: 5px;
+}
+.navlist li:hover
+{
+    color: blue;
+}
+   
