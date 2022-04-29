@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
  import navStyles from '../styles/Nav.module.css'
+ import { FaArrowRight } from "react-icons/fa";
 
 
 const nav = () => {
@@ -28,7 +29,7 @@ const nav = () => {
        <li>
            <Link href='/about'>About Us</Link>
        </li>
-       <button>Get Started <span>A</span> </button>
+       <button>Get Started <span> <FaArrowRight/></span> </button>
       
    </ul>
    </div>

@@ -47,6 +47,15 @@ border-radius:20px;
 font-size: 11px;
 text-transform: uppercase;
 margin-right:30px;
+display: flex;
+align-items: center;
+transition: ease-in-out .2s;
+cursor: pointer;
+
+}
+.navlist button:hover
+{
+    background: #0c205a;
 }
 .navlist button span{
     margin:0 5px;

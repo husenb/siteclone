@@ -1,9 +1,6 @@
 import Head from 'next/head'
 import homeStyles from '../styles/Home.module.css'
-
-
-
-
+import { FaArrowRight } from "react-icons/fa";
 export default function Home() {
   return (
     <div >
@@ -25,11 +22,13 @@ export default function Home() {
         </div>
         <div  className={homeStyles.herodowncontent}>
         <section className={homeStyles.getstartedbtn}>
-        <button> Get Started <span></span> </button>
+        <button> Get Started <span><FaArrowRight/></span> </button>
         </section>
         <section className={homeStyles.learnmoresection}>
         <p>Want to know how we stand out <br/>
-        <span> Learn More</span>
+       
+          <p className={homeStyles.learnmore}>Learn More <FaArrowRight size={10}/></p>
+
         </p>
         </section>
         </div>
@@ -50,7 +49,7 @@ export default function Home() {
         <div className={homeStyles.caraouselsection}>
           <div>
           <h1>
-          We help ambitious clients achieve extraordinary outcomes
+           We help ambitious clients achieve extraordinary outcomes
           </h1>
           </div>
         </div>
