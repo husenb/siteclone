@@ -8,7 +8,8 @@ const nav = () => {
   return (
     <nav className={navStyles.nav}>
     <div className={navStyles.logo} > 
-    <img src='https://www.lftechnology.com/wp-content/themes/Froggy/img/logo_leapfrog.svg' height={50} width={300}/> 
+    
+    <img src='https://www.lftechnology.com/wp-content/themes/Froggy/img/logo_leapfrog.svg' height={50} width={300}/>
      </div>
 
    <div className={navStyles.navlist} >

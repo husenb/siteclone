@@ -1,6 +1,11 @@
 import Head from 'next/head'
 import homeStyles from '../styles/Home.module.css'
 import { FaArrowRight } from "react-icons/fa";
+import { HiOutlineUserGroup } from "react-icons/hi";
+import { RiBuildingLine } from "react-icons/ri";
+import { AiOutlineUserAdd } from "react-icons/ai";
+
+
 export default function Home() {
   return (
     <div >
@@ -10,6 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
        
       </Head>
+      {/* ...............................Top content after navbar....................... */}
         <div className={homeStyles.hero}>
         <div className={homeStyles.herocontent}>
         <h1>
@@ -22,17 +28,19 @@ export default function Home() {
         </div>
         <div  className={homeStyles.herodowncontent}>
         <section className={homeStyles.getstartedbtn}>
-        <button> Get Started <span><FaArrowRight/></span> </button>
+        <button className={homeStyles.button1}> Get Started <i><FaArrowRight/></i> </button>
         </section>
         <section className={homeStyles.learnmoresection}>
         <p>Want to know how we stand out <br/>
        
-          <p className={homeStyles.learnmore}>Learn More <FaArrowRight size={10}/></p>
+          <span className={homeStyles.learnmore}>Learn More <FaArrowRight size={10}/></span>
 
         </p>
         </section>
         </div>
         </div>
+
+        {/*.......................... Ceo section ........................... */}
         <div className={homeStyles.ceosection}>
           <p className={homeStyles.quote} >
           “It would have taken months to build the product team that we inherited overnight with Leapfrog. They're built for startup speed, and they have consistently delivered a well-engineered product for us. Laudio is my second partnership with Leapfrog, and they have earned my trust.”
@@ -46,9 +54,11 @@ export default function Home() {
           <img src='https://www.lftechnology.com/wp-content/themes/Froggy/dist/images/testimonial_laudio.png' 
           height={72} width={101}/>
         </div>
+
+        {/* ......................Review Section  .................*/}
         <div className={homeStyles.caraouselsection}>
           <div>
-          <h1>
+          <h1 className={homeStyles.container_heading}>
            We help ambitious clients achieve extraordinary outcomes
           </h1>
           </div>
@@ -131,15 +141,17 @@ export default function Home() {
             
           </div>
         </div>
+
+        {/*........................ Card Sections.................................... */}
         <div className={homeStyles.container}>
           <div className={homeStyles.cardsection}>
             <div className={homeStyles.cardsection_head}>
-          <h1 >We work how you work</h1>
+          <h1 className={homeStyles.container_heading} >We work how you work</h1>
           <p>Level up your team with Leapfrog. Choose the engagement model that makes sense for you.</p>
             </div>
             <div className={homeStyles.cards}>
               <div className={homeStyles.eachcard}>
-                <h1>Icon</h1>
+               <i><RiBuildingLine size="3em" color='#2ecc71' /></i>
                 <h2>
                  Build a new product with us
                 </h2>
@@ -150,7 +162,7 @@ export default function Home() {
                 <button className={homeStyles.button4}>show me now <span>A</span></button>
               </div>
               <div className={homeStyles.eachcard}>
-                
+                <i><HiOutlineUserGroup size="3em" color='#2ecc71'/></i>
                 <h2>
                 Build a new product with us
                 </h2>
@@ -161,7 +173,7 @@ export default function Home() {
                 <button className={homeStyles.button4}>show me now <span>A</span></button>
               </div>
               <div className={homeStyles.eachcard}>
-               <h1>Icon</h1>
+               <i><AiOutlineUserAdd size='3em' color='#2ecc71' /></i>
                
                <h2>
                Build a new product with us
@@ -175,6 +187,59 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/*,....................... Playbook sections ............................*/}
+        <div className={homeStyles.playbook_container} >
+          <div className={homeStyles.playbook}>
+          <h1 className={homeStyles.container_heading} >See what we are thinking</h1>
+          <p>We're not just doers, we're tinkerers and thinkers obsessed with building new things in better ways. Read some of our <a href=""> insights</a>, download our <a href=""> playbooks</a> or listen to our <a href=""> podcast.</a></p>
+          </div>
+          <div className={homeStyles.playbook_main}>
+            <div className={homeStyles.playbook_main1}>
+              <img src="https://www.lftechnology.com/wp-content/themes/Froggy/dist/images/playbook.png" alt="" />
+            </div>
+             <div className={homeStyles.playbook_main2}>
+              <h6>Our playbook</h6>
+              <h2>Build products that your customers love.</h2>
+              <p>We believe in simple designs that solve users' problems and achieve business outcomes. Our process is based on design sprint best practices because we believe that ideas evolve for the better through understanding, prototyping, and fast iterations.</p>
+              <button className={homeStyles.button4}>Download Playbook  <i><FaArrowRight/></i></button>            
+              <button className={homeStyles.button5}>All Playbooks<i><FaArrowRight/></i></button>            
+            </div>
+          </div>
+        </div> 
+{/* ..................Trusted By section............................. */}
+       
+       <div className={homeStyles.container}>
+          <div className={homeStyles.trustedby}>
+            <h4>Trusted by</h4>
+            <div className={homeStyles.image_group1}>
+            <img src="https://www.lftechnology.com/wp-content/themes/Froggy/dist/images/microsoft.png" alt=""/>
+            <img src="https://www.lftechnology.com/wp-content/themes/Froggy/dist/images/supercore.png" alt="" height={100} width={180}/>
+            <img src="https://www.lftechnology.com/wp-content/themes/Froggy/dist/images/keller.png" alt="" />
+            </div>
+            <div className={homeStyles.image_group2}>
+            <img src="https://www.lftechnology.com/wp-content/themes/Froggy/dist/images/xerox.png" alt="" />
+            <img src="https://www.lftechnology.com/wp-content/themes/Froggy/dist/images/washington.png" alt="" />
+            <img src="https://www.lftechnology.com/wp-content/themes/Froggy/dist/images/laudio.png" alt="" />
+            </div>
+         </div>
+       </div> 
+       <div className={homeStyles.hiresection}>
+        
+           <h1>
+           Ready to take the leap ahead?
+           </h1>
+           <p>
+           I want to 
+           <select name="select" id="select" className={homeStyles.select}>
+             <option value=""> hire a dedicated engineering team</option>
+             <option value=""> Build a new product</option>
+             <option value=""> Augment an existing team</option>
+            </select>
+           </p>
+           <button className={homeStyles.button6}> <i> <FaArrowRight size="2em" color='white'/></i> </button>
+        
+       </div>
       <footer>
       </footer>
     </div>

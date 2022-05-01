@@ -15,9 +15,9 @@
 }
 .herocontent
 {
-
+max-height: fit-content;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   align-items: flex-start;
   padding-top: 100px;
 }
@@ -38,26 +38,32 @@
   max-width:70%;
  
 }
-.getstartedbtn button{
-text-transform: uppercase;
-background:#2ecc71;
-color: white;
-padding:14px 18px;
-border: 0;
-border-radius:20px;
-font-size: 12px;
-margin-right:30px;
-display: flex;
-transition: ease-in-out .2s;
-cursor: pointer;
-}
-.getstartedbtn button:hover{
+.button1
+{
+  text-transform: uppercase;
+  background:#2ecc71;
+  color: white;
+  padding:14px 18px;
+  border: 0;
+  border-radius:20px;
+  font-size: 12px;
+  margin-right:30px;
+  display: flex;
+  transition: ease-in-out .2s;
+  cursor: pointer;
+ }
+.button1:hover{
   background-color: #229653;
   
 }
-.getstartedbtn  span{
+
+.button1  i{
     margin:0 10px;
     padding-left: 10px;
+    transition: ease-in-out .2s;
+}
+.button1:hover i{
+ transform: translate(5px);
 }
 .herodowncontent
 {
@@ -118,12 +124,7 @@ cursor: pointer;
   padding: 80px;
 
 }
-.caraouselsection h1
-{
-  max-width: 70%;
-  color: #102b7b;
-  font-size: 50px;
-}
+
 .showmenowsection
 {
   width: 100%;
@@ -216,12 +217,6 @@ justify-content: space-around;
 {
   line-height: 1;
 }
-.cardsection_head h1
-{
-color: #102b7b;
-font-size: 2.6rem;
-letter-spacing: 1px;
-}
 .cardsection_head p{
   color: #212529;
   font-size: 1.4rem;
@@ -263,4 +258,147 @@ font-weight: 600;
   text-transform: uppercase;
   font-size: 11px;
   cursor: pointer;
+}
+
+.container_heading
+{
+color: #102b7b;
+font-size: 2.6rem;
+letter-spacing: 1px;
+max-width: 60%;
+}
+.playbook_container{
+  background-color: #f5f8fc;
+  padding: 80px;
+}
+.playbook p
+{
+  max-width: 80%;
+  font-size: 22px;
+  font-weight: 600;
+}
+.playbook a{
+  text-decoration: underline;
+  color: gray;
+  transition: all .2s;
+}
+.playbook a:hover{
+  text-decoration: none;
+  color: #229653;
+}
+.playbook_main
+{
+display: flex;
+
+margin: 50px 5px;
+padding: 50px 5px;
+}
+.playbook_main2
+{
+
+  margin-left: 40px;
+}
+
+.playbook_main2 h6{
+color: #2ecc71;
+font-weight: 400;
+font-size: 16px;
+text-transform: uppercase;
+}
+.playbook_main2 h2{
+  font-size: 1.8rem;
+  
+  }
+ .button5
+{
+  color: #2ecc71;
+  margin-left: 40px;
+  padding: 8px 12px;
+  background: transparent;
+  border: 0;
+  border-radius: 16px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease-in-out .2s;
+} 
+.button5 i
+{
+  padding-left: 5px;
+  transition: ease-in-out .2s;
+}
+.button5:hover i {
+ padding-left: 10px;
+}
+.trustedby
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 50vh;
+}
+.trustedby h4{
+  color: gray;
+  font-size: 20px;
+
+}
+.trustedby img{
+  margin:0 20px;
+  padding:0 20px;
+} 
+.image_group{
+  width: 100%;
+}
+.image_group1 {
+
+
+  display: flex;
+  align-items: center;
+ 
+  
+}
+.image_group2 {
+  display: flex;
+  align-items: center;
+  
+}
+.hiresection
+{
+  background-color: #e1f7eb;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 70vh;
+}
+.hiresection h1{
+  color:#2ecc71;
+  font-size:2.6rem ;
+}
+.hiresection p{
+  font-size: 20px;
+  color: #102b7b;
+}
+.select {
+  border: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #102b7b;
+  background: transparent;
+}
+.button6
+{
+  background-color: #2ecc71;
+  width: 70px;
+  height: 70px;
+  border: 0;
+  border-radius: 50%;
+  transition: ease-in-out .2s;
+}
+.button6:hover {
+  background-color: #229653;
+
 }
