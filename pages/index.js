@@ -1,9 +1,13 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import homeStyles from '../styles/Home.module.css'
 import { FaArrowRight } from "react-icons/fa";
 import { HiOutlineUserGroup } from "react-icons/hi";
 import { RiBuildingLine } from "react-icons/ri";
 import { AiOutlineUserAdd } from "react-icons/ai";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import Image from 'next/image';
+
 
 
 export default function Home() {
@@ -18,6 +22,7 @@ export default function Home() {
       {/* ...............................Top content after navbar....................... */}
         <div className={homeStyles.hero}>
         <div className={homeStyles.herocontent}>
+          <div className={homeStyles.herocontent_top}>
         <h1>
           Innovate Better, <br/>
         <span>faster.</span>
@@ -26,17 +31,23 @@ export default function Home() {
         We help businesses imagine and create the digital experiences of tomorrow. We succeed together by blending the best of entrepreneurship, startup thinking, and world-class engineering.
         </p>
         </div>
+        
         <div  className={homeStyles.herodowncontent}>
-        <section className={homeStyles.getstartedbtn}>
+        <div className={homeStyles.herodowncontent_left}>
         <button className={homeStyles.button1}> Get Started <i><FaArrowRight/></i> </button>
-        </section>
-        <section className={homeStyles.learnmoresection}>
+        </div>
+        <div className={homeStyles.herodowncontent_right}>
         <p>Want to know how we stand out <br/>
-       
-          <span className={homeStyles.learnmore}>Learn More <FaArrowRight size={10}/></span>
+        <button className={homeStyles.button2}> Learn more<i><FaArrowRight size='.8em'/></i> </button>
 
         </p>
-        </section>
+       
+        </div>
+       
+        </div>
+        </div>
+        <div className={homeStyles.arrowdown}>
+          <i><MdKeyboardArrowDown size='3em' color='white'/></i>
         </div>
         </div>
 
@@ -63,6 +74,7 @@ export default function Home() {
           </h1>
           </div>
         </div>
+        {/* ......................Show Me section................... */}
         <div className={homeStyles.showmenowsection}>
           <div className={homeStyles.showmesection_top}>
             <div className={homeStyles.showmesection_title}>
@@ -81,7 +93,6 @@ export default function Home() {
           <div className={homeStyles.number_coloumn}>
             <div className={homeStyles.eachcolumn}>
               <button>1</button>
-
               <h1>Investigate</h1>
               <ul>
               <li>Discovery Workshops</li>
@@ -146,8 +157,8 @@ export default function Home() {
         <div className={homeStyles.container}>
           <div className={homeStyles.cardsection}>
             <div className={homeStyles.cardsection_head}>
-          <h1 className={homeStyles.container_heading} >We work how you work</h1>
-          <p>Level up your team with Leapfrog. Choose the engagement model that makes sense for you.</p>
+             <h1 className={homeStyles.container_heading} >We work how you work</h1>
+               <p>Level up your team with Leapfrog. Choose the engagement model that makes sense for you.</p>
             </div>
             <div className={homeStyles.cards}>
               <div className={homeStyles.eachcard}>
@@ -196,7 +207,7 @@ export default function Home() {
           </div>
           <div className={homeStyles.playbook_main}>
             <div className={homeStyles.playbook_main1}>
-              <img src="https://www.lftechnology.com/wp-content/themes/Froggy/dist/images/playbook.png" alt="" />
+            <Image src="/playbook.png"height='1000' width='1200'/>
             </div>
              <div className={homeStyles.playbook_main2}>
               <h6>Our playbook</h6>
@@ -213,17 +224,19 @@ export default function Home() {
           <div className={homeStyles.trustedby}>
             <h4>Trusted by</h4>
             <div className={homeStyles.image_group1}>
-            <img src="https://www.lftechnology.com/wp-content/themes/Froggy/dist/images/microsoft.png" alt=""/>
-            <img src="https://www.lftechnology.com/wp-content/themes/Froggy/dist/images/supercore.png" alt="" height={100} width={180}/>
-            <img src="https://www.lftechnology.com/wp-content/themes/Froggy/dist/images/keller.png" alt="" />
+            <Image src="/microsoft.png" height='50' width='140' />
+            <Image src="/supercore.png" height='70' width='120' />
+            <Image src="/keller.png" height='70' width='120'  />
             </div>
             <div className={homeStyles.image_group2}>
-            <img src="https://www.lftechnology.com/wp-content/themes/Froggy/dist/images/xerox.png" alt="" />
-            <img src="https://www.lftechnology.com/wp-content/themes/Froggy/dist/images/washington.png" alt="" />
-            <img src="https://www.lftechnology.com/wp-content/themes/Froggy/dist/images/laudio.png" alt="" />
+            <Image src="/microsoft.png" height='50' width='140'/>
+            <Image src="/supercore.png" height='70' width='120' />
+            <Image src="/keller.png" height='70' width='120'  />
             </div>
          </div>
        </div> 
+
+       {/* ................................Hire Section.........................  */}
        <div className={homeStyles.hiresection}>
         
            <h1>

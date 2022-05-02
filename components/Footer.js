@@ -1,6 +1,7 @@
 import React from 'react'
 import footStyles from '../styles/Footer.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 const Footer = () => {
@@ -75,7 +76,7 @@ const Footer = () => {
             
             </div>
             <div className={footStyles.copyright_right}>
-                <img src="https://www.lftechnology.com/wp-content/themes/Froggy/dist/images/new_logo_dark.svg" alt="" />
+                <Image src="/leapfrog.png" height='50' width="80"/>
             </div>
 
         </div>

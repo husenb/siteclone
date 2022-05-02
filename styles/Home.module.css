@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 .container
 {
   padding: 80px;
@@ -8,35 +9,39 @@
 {
     background: url(../hero.png) no-repeat;
     background-size: cover; 
-    background-color: rgb(18, 40, 149);
-    height: 90vh;
+    background-color: rgb(18, 40, 149); 
     width: 100%;
     padding-left:80px;
 }
 .herocontent
 {
-max-height: fit-content;
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
   padding-top: 100px;
 }
-.herocontent h1{
+.herocontent_top h1{
   color: white;
   font-size: 70px;
   font-weight: bold;
   line-height: 70px;
 }
-.herocontent span{
+.herocontent_top span{
   text-decoration: underline;
   color: #2ecc71;
 }
-.herocontent p{
+.herocontent_top p{
   color: white;
   font-size: 20px;
-  font-weight: bold;
-  max-width:70%;
- 
+  font-weight: 600;
+  max-width:60%;
+}
+.herodowncontent
+{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-block: 40px;
 }
 .button1
 {
@@ -54,9 +59,7 @@ max-height: fit-content;
  }
 .button1:hover{
   background-color: #229653;
-  
 }
-
 .button1  i{
     margin:0 10px;
     padding-left: 10px;
@@ -65,35 +68,65 @@ max-height: fit-content;
 .button1:hover i{
  transform: translate(5px);
 }
-.herodowncontent
-{
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-
+.herodowncontent_left{
+  margin-right: 30px;
 }
-.learnmoresection
-{
-  margin: 0 20px;
+.herodowncontent_right p{
+  font-size: 15px;
+  color: white;
 }
 .learnmore{
-  color: #229653;
+  color: #2ecc71;
+  background: transparent;
+  border: 0;
+  font-size: 15px;
+  font-weight: 600;
+  transition: ease-in-out .2s;
+}
+.learnmore:hover i {
+  transform: translate(5px);
+}
+.button2
+{
+ background: transparent;
+color: #2ecc71;
+ margin-block: 10px;
+  border: 0;
+  border-radius:20px;
+  font-size: 16px;
+  font-weight: 550;
+  display: flex;
+  transition: ease-in-out .2s;
+  cursor: pointer;
+ }
+
+.button2  i{
+    margin-inline:5px;
+    padding-left: 5px;
+    transition: ease-in-out .2s;
+}
+.button2:hover i{
+  transform: translate(5px);
+ }
+ .arrowdown
+{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width:600px){
+  .hero{
+    padding: 40px;
+  }
 
 }
-.learnmoresection p{
-  color: #2ecc71;
-  cursor: pointer;
-  line-height: 2;
-  font-weight: 300;
-}
-.learnmoresection button{
-  background: transparent;
-  color: #2ecc71;
-}
+
+
+/* .............................Ceo Section........................... */
 .ceosection
 {
   width: 100%;
-  height: 90vh;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -122,22 +155,35 @@ max-height: fit-content;
   background-color: #f5f8fc;
   height: 150vh;
   padding: 80px;
+}
+@media (max-width:600px){
+  .ceosection{
+    padding: 40px;
+  }
+  .quote
+{
+font-size: 24px;
+}
+
 
 }
 
+
+
+/* ....................Show me Section................... */
 .showmenowsection
 {
   width: 100%;
-  
   background-color: #102b7b;
-  padding:70px;
+  padding:80px;
   
 }
 .showmesection_title
 {
 display: flex;
+flex-wrap: wrap;
 align-items: center;
-justify-content: space-around;
+justify-content:space-between;
 
 }
 .showmesection_title h1
@@ -161,7 +207,7 @@ justify-content: space-around;
 }
 .showme_subtitle
 {
-  padding: 0 90px;
+  
 }
 .showme_subtitle p{
   color: white;
@@ -173,6 +219,7 @@ justify-content: space-around;
 {
   padding: 80px 0px;
  display: flex;
+ flex-wrap: wrap;
   align-items: center;
   color: white;
   text-align: center;
@@ -210,6 +257,7 @@ justify-content: space-around;
 .cards
 {
   display: flex;
+  flex: row wrap;
   justify-content: space-around;
   margin-top: 100px;
 }
@@ -267,9 +315,11 @@ font-size: 2.6rem;
 letter-spacing: 1px;
 max-width: 60%;
 }
+
 .playbook_container{
   background-color: #f5f8fc;
   padding: 80px;
+  width: 100%;
 }
 .playbook p
 {
@@ -288,15 +338,22 @@ max-width: 60%;
 }
 .playbook_main
 {
+width: 100%;
 display: flex;
-
-margin: 50px 5px;
-padding: 50px 5px;
+align-items: center;
+justify-content: space-around;
+flex:row wrap;
+margin-top: 50px;
+padding-top: 50px;
+}
+.playbook_main1{
+  padding: 5px;
+  margin: 5px;
 }
 .playbook_main2
 {
-
-  margin-left: 40px;
+  padding: 5px;
+margin: 5px;
 }
 
 .playbook_main2 h6{
@@ -331,6 +388,28 @@ text-transform: uppercase;
 .button5:hover i {
  padding-left: 10px;
 }
+@media (max-width:800px) {
+  .playbook_main
+  {  
+    flex-direction: column;
+  }
+  .cards{
+    flex-direction: column;
+  }
+  .playbook_main2 h2{
+    font-size: 1.5rem;
+    
+    }
+    .container_heading{
+      font-size: 2rem;
+      max-width: 90%;
+    }
+
+  
+}
+
+
+
 .trustedby
 {
   display: flex;
@@ -344,24 +423,25 @@ text-transform: uppercase;
   font-size: 20px;
 
 }
-.trustedby img{
-  margin:0 20px;
-  padding:0 20px;
-} 
+
 .image_group{
   width: 100%;
+  display: flex;
+  
 }
 .image_group1 {
-
-
+  width: 60%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
  
   
 }
 .image_group2 {
+  width: 60%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   
 }
 .hiresection
@@ -372,7 +452,7 @@ text-transform: uppercase;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 70vh;
+  
 }
 .hiresection h1{
   color:#2ecc71;
@@ -402,3 +482,4 @@ text-transform: uppercase;
   background-color: #229653;
 
 }
+

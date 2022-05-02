@@ -2,7 +2,6 @@
 .footer_container
 {
     background-color: #212529;
-   
     width: 100%;
     padding: 80px;
 }
@@ -52,7 +51,7 @@ padding: 14px 16px;
 .footer_mid{
     display: flex;
     flex-wrap: wrap;
-    flex: auto;
+ 
     align-items: center;
     justify-content: space-between;
     margin-top:60px;
@@ -122,4 +121,15 @@ padding: 14px 16px;
 .copyright_left a{
     color: #2ecc71;
     margin: 0 20px;
+}
+@media (max-width:600px) {
+    .footer_container
+    {
+        padding: 40px;
+    }
+    .footer_top_right input
+    {
+        width: 300px;
+    }
+    
 }

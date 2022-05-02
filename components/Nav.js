@@ -1,19 +1,24 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
  import navStyles from '../styles/Nav.module.css'
  import { FaArrowRight } from "react-icons/fa";
+ import { BiMenuAltRight } from "react-icons/bi";
 
 
 const nav = () => {
   return (
     <nav className={navStyles.nav}>
     <div className={navStyles.logo} > 
-    
-    <img src='https://www.lftechnology.com/wp-content/themes/Froggy/img/logo_leapfrog.svg' height={50} width={300}/>
+    <Image src="/leapfrog.png" height='40' width="140"/>'
+     </div>
+     <div className={navStyles.toggle_button}>
+         <i><BiMenuAltRight size="3em"/></i>
      </div>
 
    <div className={navStyles.navlist} >
    <ul>
+
        
        <li>
            <Link href='/whatwedo'>What We Do</Link>
@@ -30,7 +35,7 @@ const nav = () => {
        <li>
            <Link href='/about'>About Us</Link>
        </li>
-       <button>Get Started <span> <FaArrowRight/></span> </button>
+       <button className={navStyles.navbutton}>Get Started <span> <FaArrowRight/></span> </button>
       
    </ul>
    </div>

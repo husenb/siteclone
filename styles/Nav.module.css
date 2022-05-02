@@ -11,14 +11,13 @@
     line-height: 80px;
     background: white;
     color: rgb(56, 55, 53);
+    z-index: 10;
 }
 .logo
 {
-    flex-basis: 20%;
-    padding-left: 10px;
-    margin-left: 10px;
-    line-height: 40px;
-    flex-shrink: 1;
+   display: flex;
+   align-items: center;
+   padding-left: 50px;
 }
 
 .navlist{
@@ -53,16 +52,16 @@ transition: ease-in-out .2s;
 cursor: pointer;
 
 }
-.navlist button:hover
+.navbutton:hover
 {
     background: #0c205a;
 }
-.navlist button span{
+.navbutton span{
     margin:0 5px;
     padding-left: 5px;
     transition: ease-in-out .2s;
 }
-.navlist button:hover span
+.navbutton:hover span
 {
    transform: translate(5px);
 }
@@ -72,5 +71,35 @@ cursor: pointer;
 }
 .navlist li:active{
     color: #2ecc71;
+}
+.toggle_button
+{
+    position: absolute;
+    top:1.5rem;
+    right: 0.5rem;
+    display: none;
+    justify-content: space-between;
+
+}
+@media (max-width:900px) {
+    .toggle_button{
+        display: flex;
+        align-items: center;
+       
+    }
+    .navlist
+    {
+        display: none;
+    }
+    .nav
+    {
+        justify-content: space-between;
+    }
+    .logo img 
+    {
+        height: 40px;
+        width: 240px;
+    }
+    
 }
    
